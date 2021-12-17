@@ -55,7 +55,7 @@ function! NN_ctags()
                   \ " --exclude=vendor" .
                   \ " --exclude=node_modules --exclude=dist --exclude=build --exclude=ios --exclude=android" .
                   \ " --exclude=_site" .
-                  \ " --languages=php,javascript"
+                  \ " --languages=php,python,javascript"
 
     " procura se existe um arquivo .ctags a mais
     if filereadable(expand(".ctags"))
