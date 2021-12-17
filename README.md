@@ -5,13 +5,13 @@ Explicação do uso do [ctags](https://github.com/universal-ctags/ctags) com php
 ## TL;DR
 
 1. Execute `ctags -R .`
-2. Utilize `<c-x><c-o>` para ver sugestões de tags
+2. Utilize <kbd>CTRL</kbd><kbd>X</kbd><kbd>CTRL</kbd><kbd>O</kbd> para ver sugestões de tags
 
 ## "Tutorial"
 
 1. Abra `index.php`
 2. Retire o comentário de alguma das linhas
-3. Vá até o final da linha e execute `<c-x><c-o>`
+3. Vá até o final da linha e execute <kbd>CTRL</kbd><kbd>X</kbd><kbd>CTRL</kbd><kbd>O</kbd>
 4. Note que, se aparecer alguma sugestão, não é a esperada
 5. Execute `ctags -R .` no terminal dentro do projeto
 6. Note que foi criado o arquivo `tags`
@@ -20,7 +20,7 @@ Explicação do uso do [ctags](https://github.com/universal-ctags/ctags) com php
 
 ## Comandos uteis de tags
 
-- `<c-x><c-o>` sugere tags
+- <kbd>CTRL</kbd><kbd>X</kbd><kbd>CTRL</kbd><kbd>O</kbd> sugere tags
 - `:ts {word}` ou `g]` lista referencias de `word`
 - `<c-]>` vai para definição da tag
     - `<c-]>` não funciona no teclado brasileiro ([issue](https://github.com/vim/vim/issues/1378)), a solução é mapear para `<c-\>`
