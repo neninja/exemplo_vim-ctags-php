@@ -28,7 +28,7 @@ Explicação do uso do [ctags](https://github.com/universal-ctags/ctags) com php
 
 ## Sugestões
 
-- Caso o arquivo de tags seja criado no projeto, lembre-se de ignorá-lo com `.gitignore`
+- Caso o arquivo de tags seja criado no projeto ~~como foi feito no tutorial~~, lembre-se de ignorá-lo com `.gitignore`
 
 ## Observações
 
