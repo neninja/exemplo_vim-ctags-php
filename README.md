@@ -48,7 +48,7 @@ nnoremap <c-\> <c-]>
 " Att ctags
 " Necessario instalar ctags ou universal ctags
 " :call Ctags()
-function! Ctags()
+function! NN_ctags()
     let s:ctags_command="ctags" . 
                   \ " -R --totals" .
                   \ " --exclude=.git --exclude=.svn" .
@@ -68,4 +68,10 @@ function! Ctags()
     " executa o comando montado na string
     execute "!".s:ctags_command
 endfun
+```
+
+- Execução da função fora do vim
+
+```sh
+vim -c "call NN_ctags()" -cq
 ```
