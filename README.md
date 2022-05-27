@@ -5,7 +5,7 @@ Explicação do uso do [ctags](https://github.com/universal-ctags/ctags) com php
 ## TL;DR
 
 1. Execute `ctags -R .`
-2. Utilize <kbd>CTRL</kbd><kbd>X</kbd><kbd>CTRL</kbd><kbd>O</kbd> para ver sugestões de tags
+2. Utilize <kbd>CTRL</kbd><kbd>X</kbd><kbd>CTRL</kbd><kbd>O</kbd> para ver sugestões de tags (`:h ft-php-omni`)
 
 ## "Tutorial"
 
