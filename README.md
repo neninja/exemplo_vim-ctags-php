@@ -39,10 +39,10 @@ Meu `vimrc` para utilização de ctags
 ```vim
 set tags=tags
 
-" Goto definition
+" Goto definition com o cursor em cima
 nnoremap <leader>t :tj <c-r><c-w><CR>
 
-" teclado brasileiro <c-]> não funciona
+" caso no teclado brasileiro <c-]> não funcione
 nnoremap <c-\> <c-]>
 
 " Att ctags
@@ -53,9 +53,8 @@ function! Ctags()
                   \ " -R --totals" .
                   \ " --exclude=.git --exclude=.svn" .
                   \ " --exclude=vendor" .
-                  \ " --exclude=node_modules --exclude=dist --exclude=build --exclude=ios --exclude=android" .
-                  \ " --exclude=_site" .
-                  \ " --languages=php,python,javascript"
+                  \ " --php-kinds=cfvit" .
+                  \ " --languages=php"
 
     " procura se existe um arquivo .ctags a mais
     if filereadable(expand(".ctags"))
