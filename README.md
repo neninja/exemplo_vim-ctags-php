@@ -5,7 +5,7 @@ Explicação do uso do [ctags](https://github.com/universal-ctags/ctags) com php
 ## TL;DR
 
 1. Execute `ctags -R .`
-2. Utilize <kbd>CTRL</kbd><kbd>X</kbd><kbd>CTRL</kbd><kbd>O</kbd> para ver sugestões de tags (`:h ft-php-omni`)
+2. Utilize <kbd>CTRL</kbd><kbd>X</kbd><kbd>CTRL</kbd><kbd>O</kbd> para ver sugestões de tags
 
 ## "Tutorial"
 
@@ -20,7 +20,10 @@ Explicação do uso do [ctags](https://github.com/universal-ctags/ctags) com php
 
 ## Comandos uteis de tags
 
-- <kbd>CTRL</kbd><kbd>X</kbd><kbd>CTRL</kbd><kbd>O</kbd> sugere tags
+- <kbd>CTRL</kbd><kbd>X</kbd><kbd>CTRL</kbd><kbd>]</kbd> sugere **quaisquer** tags independente do contexto
+- <kbd>CTRL</kbd><kbd>X</kbd><kbd>CTRL</kbd><kbd>O</kbd> sugere o que faz sentido contextualmente pelo omnifunc (`:h ft-php-omni`)
+    - Mesmo utilizando omnifunc, para a possibilidade de sugestão de métodos e propriedades é necessária a utilização do ctags para "alimentar" o autocomplete (`syntaxcomplete#Complete` ou `phpcomplete#CompletePHP` mais especificamente)
+    - Até o momento, propriedades tipadas do PHP 8 não são identificadas
 - `:ts {word}` ou `g]` lista referencias de `word`
 - `<c-]>` vai para definição da tag
     - `<c-]>` não funciona no teclado brasileiro ([issue](https://github.com/vim/vim/issues/1378)), a solução é mapear para `<c-\>`
